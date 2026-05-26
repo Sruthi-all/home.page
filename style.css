@@ -1,0 +1,160 @@
+# Website Folder Structure and Sample Code
+
+## Basic Web Project Folder Structure
+
+```text
+my-website/
+│
+├── index.html
+├── about.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── images/
+│   └── logo.png
+│
+└── assets/
+    └── fonts/
+```
+
+---
+
+# 1. index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Home Page</h2>
+        <p>This is a simple website.</p>
+        <button onclick="showMessage()">Click Me</button>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+```
+
+---
+
+# 2. about.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>About Page</h1>
+    <p>This is the about page.</p>
+</body>
+</html>
+```
+
+---
+
+# 3. contact.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Contact Page</h1>
+    <p>Email: example@gmail.com</p>
+</body>
+</html>
+```
+
+---
+
+# 4. css/style.css
+
+```css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+```
+
+---
+
+# 5. js/script.js
+
+```javascript
+function showMessage() {
+    alert("Welcome to the Website!");
+}
+```
+
+---
+
+# Explanation of Folders
+
+| Folder/File  | Purpose                      |
+| ------------ | ---------------------------- |
+| index.html   | Main home page               |
+| about.html   | About page                   |
+| contact.html | Contact page                 |
+| css/         | Stores CSS files             |
+| js/          | Stores JavaScript files      |
+| images/      | Stores images                |
+| assets/      | Extra files like fonts/icons |
+
+---
+
+# How to Run
+
+1. Create the folders and files.
+2. Copy the code into each file.
+3. Open `index.html` in a browser.
